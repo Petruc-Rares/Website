@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <meta name="description" content="Consultanta Educationala">
+      <meta name="keywords" content="HTML, CSS, Atestat, Consultanta, Test, Educatie">
+      <meta name="author" content="Petruc Rares">
+      <title>Consiliere educationala | Despre Noi</title>
+      <link rel="stylesheet" href="style.css" type="text/css">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div id="brand">
+                    <img src="imagini/capa.png" height="65px">
+                </div>
+                <nav>
+                    <ul>
+                        <li ><a href="index.html">Acasa</a></li>
+                        <li class="current"><a href="dp.html">Despre noi</a></li>
+                        <li><a href="chestionar.html">Chestionar</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <section id="newsletter">
+            <div class="container">
+                <h1>Aboneaza-te la buletinul nostru informativ!</h1>
+                <fore>
+                    <input type="email" placeholder="Enter Email..">
+                    <button type="submit" class="buton_1">Aboneaza-te</button>
+                </fore>
+            </div>
+        </section>
+        
+        <section id="main">
+            <div class="container">
+                <article id="main-col">
+                    <h1 class="page-title">Despre noi</h1>
+                    <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet semper risus. Nunc sed finibus augue. Aenean cursus massa vel libero iaculis, ac consequat risus scelerisque. Quisque sollicitudin gravida eros et sagittis. Curabitur vestibulum mauris mi, eget sodales orci venenatis eu. Cras pulvinar finibus lacus, fermentum ornare tellus interdum eget. Integer id nulla et risus vulputate laoreet nec in nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget ligula vitae justo facilisis pharetra non ac tellus.</p>
+
+<p>Aliquam odio nulla, mattis sed arcu at, rutrum tempor sem. Proin congue risus dolor, a volutpat quam ullamcorper vitae. Duis lorem mi, iaculis nec urna a, placerat malesuada sapien. Vestibulum non ante velit. Proin lobortis dolor id nunc porta ullamcorper. Quisque fermentum dignissim neque, nec scelerisque ante condimentum eget. Proin eu efficitur magna. Pellentesque vitae eleifend mauris. Mauris at velit eu dolor lobortis ullamcorper vitae non ex. Proin arcu nisi, ornare in efficitur sed, sodales hendrerit sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel venenatis purus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse non euismod sem, id fringilla lacus. Praesent quis condimentum quam. Suspendisse quis vestibulum erat.</p>
+                </article><!--
+                
+               --> <aside id="sidebar">
+                    <div class="dark">
+                    <h3>Cu ce ne ocupam?</h3>
+                    <p>Aliquam odio nulla, mattis sed arcu at, rutrum tempor sem. Proin congue risus dolor, a volutpat quam ullamcorper vitae. Duis lorem mi, iaculis nec urna a, placerat malesuada sapien. Vestibulumefficitur sed, sodales hendrerit sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel venenatis purus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse non euismod sem, id fringilla lacus</p>
+                    </div>
+                </aside>
+            </div>
+        </section>
+                  
+        <section id="casute">
+            <div class="container">
+                <div class="casa">
+                <img src="imagini/rares.jpg">
+                    <h3>Eu sunt Rares</h3>
+			<div id="content">
+                    <p>Salut prieteni!</p><br>
+		</div>
+		<a id="show-more">Show More</a>
+	<br><br>
+                </div>
+                <div class="casa">
+		<div class="img1"><img src="imagini/adriana.jpg"></div>
+                    <h3>Eu sunt Aura</h3>
+		<div id="content1">
+                    <p>Salut prieteni!</p><br>
+		</div>
+		<a id="show-more1">Show More</a>
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </section>
+         <script>
+	var content = document.getElementById("content");
+	var button = document.getElementById("show-more");
+	
+	button.onclick = function(){
+	if(content.className == "open"){content.className = "";
+					button.innerHTML = "Show More";
+
+		} else{content.className = "open";
+			button.innerHTML = "Show Less";
+}	
+}
+	</script>
+<script>
+	var content1 = document.getElementById("content1");
+	var button1 = document.getElementById("show-more1");
+	
+	button1.onclick = function(){
+	if(content1.className == "open"){content1.className = "";
+					button1.innerHTML = "Show More";
+
+		} else{content1.className = "open";
+			button1.innerHTML = "Show Less";
+}	
+}
+</script>  
+<section class="jos2"> Centrul Educational "Imagination", Copyright &copy; 2019</section>  
+    </body>
+</html>

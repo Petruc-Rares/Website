@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <meta name="description" content="Consultanta Educationala">
+      <meta name="keywords" content="HTML, CSS, Atestat, Consultanta, Test, Educatie">
+      <meta name="author" content="Petruc Rares">
+      <title>Consiliere educationala | Despre Noi</title>
+      <link rel="stylesheet" href="style.css">
+      <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+      <script src = "main.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div id="brand">
+                    <img src="imagini/capa.png" height="65px">
+                </div>
+                <nav>
+                    <ul>
+                        <li ><a href="index.html">Acasa</a></li>
+                        <li><a href="dp.html">Despre noi</a></li>
+                        <li class="current"><a href="chestionar.html">Chestionar</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <section id="newsletter">
+            <div class="container">
+                <h1>Aboneaza-te la buletinul nostru informativ!</h1>
+                <fore>
+                    <input type="email" placeholder="Enter Email..">
+                    <button type="submit" class="buton_1">Aboneaza-te</button>
+                </fore>
+            </div>
+        </section>
+        
+        <section id="main">
+            <div class="container">
+                <article id="main-col">
+                    <h1 class="page-title">Chestionarul tau!</h1>
+                    
+                        <form id="quiz" name = "quiz">
+                            <p>Esti destept?</p>
+                            <input type = "radio"
+                                   id = "mc"
+                                   name = "question1"
+                                   value = "Da">Da<br>
+                            <input type = "radio"
+                                   id = "mc"
+                                   name ="question1"
+                                   value = "Nu">Nu<br>
+                            <p>Esti prost?</p>
+                            <input type = "radio"
+                                   id = "mc"
+                                   name = "question2"
+                                   value = "Da">Da<br>
+                            <input type = "radio"
+                                   id = "mc"
+                                   name ="question2"
+                                   value = "Nu">Nu<br>
+                             <p>Esti prost?</p>
+                            <input type = "radio"
+                                   id = "mc"
+                                   name = "question3"
+                                   value = "Da">Da<br>
+                            <input type = "radio"
+                                   id = "mc"
+                                   name ="question3"
+                                   value = "Nu">Nu<br>
+			                                 <p>Esti prost?</p>
+                            <input type = "radio"
+                                   id = "mc"
+                                   name = "question4"
+                                   value = "Da">Da<br>
+                            <input type = "radio"
+                                   id = "mc"
+                                   name ="question4"
+                                   value = "Nu">Nu<br>
+				                             <p>Esti prost?</p>
+                            <input type = "radio"
+                                   id = "mc"
+                                   name = "question5"
+                                   value = "Da">Da<br>
+                            <input type = "radio"
+                                   id = "mc"
+                                   name ="question5"
+                                   value = "Nu">Nu<br>
+
+                            <input id="button" type =  "button" value = "Sunt gata" onclick="check();">
+                                    
+                           
+                    </form>
+
+<script> function check(){
+
+	var question1=document.quiz.question1.value;
+	var question2=document.quiz.question2.value;
+	var question3=document.quiz.question3.value;
+	var question4=document.quiz.question4.value;
+	var question5=document.quiz.question5.value;
+	var correct=0;
+
+		if(question1 =="Da"){
+correct ++;
+}
+		if(question2 == "Nu"){
+correct ++;
+}
+		if(question3 == "Da"){
+correct ++;
+}
+		if(question4 == "Da"){
+correct ++;
+}
+		if(question5 == "Nu"){
+correct ++;
+}
+
+var messages = ["Bine","Meh","Nah"];
+var pictures = ["imagini/good.gif","imagini/meh.gif","imagini/bad.gif"]
+
+var range;
+
+if(correct<2) {range = 2;
+}
+	if(correct > 1 && correct < 5){range = 1;
+}
+	if(correct>4){
+range = 0;
+}
+
+	document.getElementById("after_submit").style.visibility = "visible";
+	document.getElementById("message").innerHTML = messages[range];
+	document.getElementById("number_correct").innerHTML = "You got " + correct + " correct.";
+	document.getElementById("picture").src=pictures[range];
+} 
+</script>
+
+                </article><!--
+                
+               --> <aside id="sidebar1">			
+                        <div id = "after_submit">
+			<div class="light">
+			<p id = "message"></p>
+                    <p id="number_correct"></p>
+			<img id="picture">
+			</div>
+                    </div>
+                </aside>
+            </div>
+        </section>
+<div class="jos2"> Centrul Educational "Imagination", Copyright &copy; 2019</div>
+       
+         
+    </body>
+</html>
+
